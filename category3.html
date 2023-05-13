@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All StyleKart - Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="final.js"></script>
+</head>
+<body>
+   
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                  <a href="index.html"><img src="images/logo1.png" width="125px" alt="logo"></a> 
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+               <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt="Cart"></a> 
+                <img src="images/menu.png" class=menu-icon alt="menu" onclick="menutoggle()">
+            </div>
+        </div>
+
+        
+
+        <!-- Single Product details -->
+
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/category-3.jpg" id="ProductImg" width="100%">
+                </div>
+                <div class="col-2">
+                    <p>Featured Category</p>
+                    <h1>Women White Hooded Sweatshirt</h1>
+                    <h4>&#8377;750</h4>
+                    <select>
+                        <option>Select size</option>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select>
+                    <input type="number" value="1">
+                    <a href="cart.html" class="btn">Add to Cart</a>
+                    <h3>Product Details <i class="fa fa-indent"></i></h3>
+                    <p>Material Type:Polyester<br>
+                       White solid sweatshirt has a hooded,two kangaroo pocket,long sleeves.<br>
+
+                    <p>
+                </div>
+            </div>
+        </div>
+   
+
+             
+    
+<!--------------------Footer------------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="playstore_image">
+                    <img src="images/app-store.png" alt="playstore_image">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo1.png" alt="logo">
+                <p>GET ALL THE LATEST TRENDS CLOTHES AT AN AFFORDABLE RATE.</p>
+                <p>We deliver the best quality clothes at the cheapest rates.Walk in style everywhere you go and be updated with the latest trends!</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+               <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+               <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+               </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - StyleKart</p>
+    </div>
+</div>
+
+
+<script>
+    // JS for toggle meu
+var MenuItems= document.getElementById("MenuItems");
+MenuItems.style.maxHeight = "0px";
+function menutoggle(){
+    if(MenuItems.style.maxHeight =="0px"){
+        MenuItems.style.maxHeight = "200px";
+    }
+    else{
+        MenuItems.style.maxHeight = "0px";
+    }
+}
+
+</script>
+</body>
+
+</html>
